@@ -1,10 +1,10 @@
 package com.company.adidas;
 
 import com.company.AbstractVaateFactory;
-import com.company.interfaces.Farkut;
-import com.company.interfaces.Kengät;
-import com.company.interfaces.Lippis;
-import com.company.interfaces.Tpaita;
+import com.company.products.Farkut;
+import com.company.products.Kengät;
+import com.company.products.Lippis;
+import com.company.products.Tpaita;
 
 public class AdidasConcreteFactory implements AbstractVaateFactory {
     @Override

@@ -1,6 +1,6 @@
 package com.company;
 
-import com.company.interfaces.*;
+import com.company.products.*;
 
 public class Jasper {
     public void valitseFactory(AbstractVaateFactory factory) {

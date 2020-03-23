@@ -1,6 +1,6 @@
 package com.company;
 
-import com.company.interfaces.*;
+import com.company.products.*;
 
 public interface AbstractVaateFactory {
     public abstract Lippis makeLippis();

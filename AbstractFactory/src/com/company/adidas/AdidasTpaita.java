@@ -1,6 +1,6 @@
 package com.company.adidas;
 
-import com.company.interfaces.Tpaita;
+import com.company.products.Tpaita;
 
 public class AdidasTpaita implements Tpaita {
     public String toString() {

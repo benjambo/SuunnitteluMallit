@@ -1,6 +1,6 @@
 package com.company.adidas;
 
-import com.company.interfaces.Kengät;
+import com.company.products.Kengät;
 
 public class AdidasKengät implements Kengät {
     public String toString() {

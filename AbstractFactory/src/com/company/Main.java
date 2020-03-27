@@ -4,9 +4,9 @@ import com.company.adidas.AdidasConcreteFactory;
 import com.company.boss.BossConcreteFactory;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
-        AbstractVaateFactory adidasFactory = AdidasConcreteFactory.class.newInstance();
-        AbstractVaateFactory bossFactory = BossConcreteFactory.class.newInstance();
+    public static void main(String[] args) {
+        AbstractVaateFactory adidasFactory = new AdidasConcreteFactory();
+        AbstractVaateFactory bossFactory = new BossConcreteFactory();
 
         Jasper jasper = new Jasper();
 

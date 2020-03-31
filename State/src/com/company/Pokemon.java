@@ -1,30 +1,25 @@
 package com.company;
 
-import com.company.muodot.Charizard;
-import com.company.muodot.Charmander;
-import com.company.muodot.Charmeleon;
-
 public class Pokemon {
-    private Muoto charmander, charmeleon, charizard, currentLvl;
+    private Muoto state;
 
-    public Pokemon() {
-        charmander = new Charmander();
-        charmeleon = new Charmeleon();
-        charizard = new Charizard();
-        currentLvl = charmander;
+    public Pokemon (Muoto state) {
+        this.state = state;
     }
 
-    // To evolve
-    public void evolve(Muoto muoto) {
-        this.currentLvl = muoto;
+    public void setState(Muoto state) {
+        this.state = state;
     }
 
-    public void printStats() {
-        System.out.println(currentLvl.name + ":\tHealth: " + currentLvl.getHp() + "\tAttack: " +
-                currentLvl.getAtk() + "\tDefense: " + currentLvl.getDef());
+    public void name() {
+        this.state.name();
     }
 
-    public Muoto getCharmander() { return this.charmander; }
-    public Muoto getCharmeleon() { return this.charmeleon; }
-    public Muoto getCharizard() { return this.charizard; }
+    public void attack() {
+        this.state.attack(this);
+    }
+
+    public void evolve() {
+        this.state.evolve(this);
+    }
 }

@@ -1,19 +1,21 @@
 package com.company;
 
+import com.company.muodot.Charmander;
+
 public class Main {
 
     public static void main(String[] args) {
-        Pokemon pokemon = new Pokemon();
+        Pokemon pokemon = new Pokemon(new Charmander());
+        pokemon.name();
 
-        // Default level (Charmander)
-        pokemon.printStats();
+        for(int i = 0; i < 26; i++) {
+            pokemon.attack();
+        }
+        pokemon.name();
 
-        // Evolving to Charmeleon
-        pokemon.evolve(pokemon.getCharmeleon());
-        pokemon.printStats();
-
-        // Evolving to Charizard
-        pokemon.evolve(pokemon.getCharizard());
-        pokemon.printStats();
+        for (int i = 0; i < 50; i++) {
+            pokemon.attack();
+        }
+        pokemon.name();
     }
 }

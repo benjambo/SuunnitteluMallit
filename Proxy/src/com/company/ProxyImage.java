@@ -2,17 +2,14 @@ package com.company;
 
 class ProxyImage implements Image {
     private final String filename;
-    private final String imageName;
     private RealImage image;
 
     /**
      * Constructor
      * @param filename name of the file
-     * @param imageName name of the image
      */
-    public ProxyImage(String filename, String imageName) {
+    public ProxyImage(String filename) {
         this.filename = filename;
-        this.imageName = imageName;
     }
 
     /**
@@ -20,7 +17,7 @@ class ProxyImage implements Image {
      */
     public void displayImage() {
         if (image == null) {
-            image = new RealImage(filename, imageName);
+            image = new RealImage(filename);
         }
         image.displayImage();
     }
@@ -29,6 +26,6 @@ class ProxyImage implements Image {
      * Show data of image
      */
     public void showData() {
-        System.out.println("Image name: " + imageName);
+        System.out.println("Image name: " + filename);
     }
 }

@@ -2,16 +2,13 @@ package com.company;
 
 class RealImage implements Image {
     private final String filename;
-    private final String imageName;
 
     /**
      * Constructor
      * @param filename name of the file
-     * @param imageName name of the image
      */
-    public RealImage(String filename, String imageName) {
+    public RealImage(String filename) {
         this.filename = filename;
-        this.imageName = imageName;
         loadImageFromDisk();
     }
 
@@ -30,6 +27,6 @@ class RealImage implements Image {
     }
 
     public void showData() {
-        System.out.println("Image name: " + imageName);
+        System.out.println("Image name: " + filename);
     }
 }

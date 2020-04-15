@@ -18,7 +18,8 @@ public class Main {
         }
 
         System.out.println("\n****************************");
-       System.out.println("\nLoad & Display Images:");
+
+        System.out.println("\nLoad & Display Images:");
         for (Image image : images) {
             image.displayImage();
         }

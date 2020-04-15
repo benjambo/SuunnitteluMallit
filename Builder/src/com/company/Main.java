@@ -9,12 +9,14 @@ public class Main {
 
         waiter.setHamburgerBuilder(hesburger);
         waiter.createBurger();
-        System.out.println(waiter.getBurger());
+        Object hb = waiter.getBurger();
+        System.out.println(hb);
 
         System.out.println("\n*****************************************************************************************");
 
         waiter.setHamburgerBuilder(mcdonalds);
         waiter.createBurger();
-        System.out.println("\n" + waiter.getBurger());
+        Object mc = waiter.getBurger();
+        System.out.println("\n" + mc);
     }
 }

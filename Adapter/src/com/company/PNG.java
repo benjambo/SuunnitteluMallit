@@ -1,6 +1,6 @@
 package com.company;
 
-public class PNG implements CustomImageViewer {
+public class PNG implements CustomPhotoAlbum {
 
     @Override
     public void showJPG(String fileType) {

@@ -1,6 +1,6 @@
 package com.company;
 
-public interface CustomImageViewer {
+public interface CustomPhotoAlbum {
     public void showJPG(String fileType);
     public void showPNG(String fileType);
 }

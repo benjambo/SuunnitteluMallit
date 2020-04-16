@@ -1,22 +1,22 @@
 package com.company;
 
 public class Adapter implements PhotoAlbum {
-    CustomImageViewer customImageViewer;
+    CustomPhotoAlbum customPhotoAlbum;
 
     public Adapter(String fileType) {
         if(fileType.equals("png")) {
-            customImageViewer = new PNG();
+            customPhotoAlbum = new PNG();
         } else if (fileType.equals("jpg")) {
-            customImageViewer = new JPG();
+            customPhotoAlbum = new JPG();
         }
     }
 
     @Override
     public void show(String name, String fileType) {
         if(fileType.equals("png")) {
-            customImageViewer.showPNG(name);
+            customPhotoAlbum.showPNG(name);
         } else if (fileType.equals("jpg")) {
-            customImageViewer.showJPG(name);
+            customPhotoAlbum.showJPG(name);
         }
     }
 }

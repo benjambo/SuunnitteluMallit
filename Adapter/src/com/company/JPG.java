@@ -1,6 +1,6 @@
 package com.company;
 
-public class JPG implements CustomImageViewer {
+public class JPG implements CustomPhotoAlbum {
     @Override
     public void showJPG(String fileType) {
         System.out.println("Showing: " + fileType);
